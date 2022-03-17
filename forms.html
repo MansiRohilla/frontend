@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user form</title>
+</head>
+
+<body>
+    <h2>fill this form for data collection </h2>
+    <form action="backend.php">
+
+        <div>
+
+            <label for="name">Name: </label>
+            <input type="text" name="username" id="name">
+
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="useremail" id="email">
+        </div>
+        <br>
+
+        <div>
+            <label for="bonus">Bonus:</label>
+            <input type="number" name=" bonus" id="bonus">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="date">
+        </div>
+
+        <br>
+        <div>
+            i am not a robot: <input type="checkbox" name="check">
+        </div>
+
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="usergender"> female <input type="radio" name="usergender">
+            other <input type="radio" name="usergender">
+        </div>
+
+
+        <br>
+        <div>
+            other could wish to specify: <br><textarea name="usertext" cols="30" rowa="10"></textarea>
+        </div>
+        <br>
+
+        <br>
+        <div>
+            <label for="car">Car: </label>
+            <select name="usercar" id="car">
+                <option value="in">Tesla</option>
+                <option value="swift">swift</option>
+                <option value="bal">Baleno</option>
+            </select>
+        </div>
+        <br>
+
+
+        <div>
+            Submit now: <input type="submit" name="usersubmit">
+            Reset now: <input type="reset" name="userreset">
+        </div>
+
+    </form>
+</body>
+
+</html>
