@@ -1,0 +1,426 @@
+/*---------------- global ------------------------ */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+html {
+    font-size: 20px;
+    /* scroll-behavior: smooth; */
+}
+/* html:focus-within {
+    scroll-behavior: smooth;
+  } */
+
+body {
+    scroll-behavior: smooth;
+}
+/* ----------Headings------------- */
+h1{
+    font-size: 300%;
+    margin-top: 0;
+    color: rgb(194, 201, 205);
+    
+}
+
+h2 {
+
+    display: inline-block;
+    color: rgb(70, 126, 156);
+    border-bottom: 2px solid rgb(161, 103, 38);
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 250%;
+
+}
+p{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding: 0px;
+}
+/* --------------------------------- */
+
+
+header {
+    margin: 0px;
+
+    padding: 0px;
+    background-image: linear-gradient(rgba(8, 8, 8, 70%), rgba(1, 1, 15, 70%)), url("new (2).jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+/* ----------Logo---------------------------- */
+
+.left img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 123px;
+
+}
+
+
+.left div {
+
+    /* padding: 4px; */
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(146, 177, 181);
+
+}
+
+/* ------------------------------------------------------ */
+
+/* -------------------Navigation bar-------------------------- */
+
+
+
+
+
+
+/* https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274412?start=0#overview */
+a {
+    color: rgb(223, 234, 241);
+    text-align: center;
+    
+    padding: 5px;
+    margin-left: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 95%;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    font-weight: 800;
+}
+.navbar{   
+    display: flex;
+    gap: 25px;
+    height: 148px;
+    /* background-color: rgb(229, 217, 217); */
+   
+    /* justify-content: center; */
+    
+}
+.mid li  a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    position: sticky;
+}
+ul
+{
+    display: flex;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.mid ul li{
+    list-style: none;
+}
+
+.mid li a:hover,
+.mid li a.active {
+    color: #c9d1d6;
+    border-bottom: 4px solid #131312;
+
+}
+
+
+
+
+
+.tagline {
+    display: inline block;
+    /* border: 2px solid green; */
+    position: absolute;
+    right: 0px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    width: 740px;
+    text-align: center;
+    top: 25%;
+    /* font-family: 'Inspiration', cursive; */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 100%;
+    color: #d5c7be;
+}
+
+
+
+/* ---------------------------------------- */
+/* buttons */
+/* ---------------------------------------- */
+
+
+button {
+    background-color: rgb(89, 106, 182);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 100;
+
+    margin-top: 20px;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-left: 80px;
+    margin: 40px;
+    text-decoration: none;
+    border-style: none;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(101, 72, 235);
+}
+
+
+.btn {
+    margin-top: 25px;
+    float: right;
+    margin-right: 0px;
+    border-radius: 1px;
+    padding: 0px;
+    height: 33px;
+    
+}
+
+/* form button .btnn {
+    text-decoration: none;
+} */
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(183, 124, 238);
+    color: white;
+
+}
+
+/* ------------headings shift--------------- */
+.heading-mens h2{
+
+    margin-left: px;
+    
+}
+
+/* ---------------------------------
+--------section 1--------------------------------------------------------------------------- */
+footer,
+section{
+    margin: 0px;
+    text-align: center;
+  
+  
+}
+
+/* About us section starts here  */
+
+
+.about-us {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-us p {
+    margin: 40px ;
+    padding: 20px;
+    width: 80%; 
+    font-weight: 500;   
+}
+.mens section{
+    margin: 50px 0px;
+}
+
+.men-collection {
+    background-image: linear-gradient(rgba(8, 8, 8, 80%), rgba(1, 1, 15, 80%)), url(collection.jpg);
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+    background-attachment: fixed;
+    overflow: hidden;
+    /* opacity: 0.1; */
+    z-index: -1;
+    height: 180vh;
+}
+.mens-para{
+    color: rgb(226, 233, 239);
+    padding: 40px;
+    width: 50%;
+    
+}
+
+
+
+
+.men-collection .container p{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* .men-collection .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+} */
+
+.men-collection .container {
+    display: flex;
+   
+   justify-content: center;
+   text-align: center;
+   gap: 1.5em;
+   
+    /* gap: -0px; */
+   padding-top:0px;
+   padding-bottom: 70px;
+   margin: 40px;
+
+}
+
+.men-collection .container img{
+    height: 400px;
+    width: auto;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+    object-fit: cover;
+    /* border-radius: 8px;border: 2px solid blue; */
+    transition: transform 0.5s;
+}
+
+
+.men-collection .container2 img:hover,
+.men-collection .container img:hover {
+
+   transform: scale(1.2);
+     
+ }
+
+.men-collection .container2{
+    display: flex;
+   
+   justify-content: center;
+   text-align: center;
+   gap: 1.5em;
+    /* gap: -0px; */
+    /* margin: 0 50px 0 50px; */
+}
+.men-collection .container2 p{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.men-collection .container2 img{
+   /* justify-content: center;
+   align-items: center; */
+    width: 300px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 0px;
+
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.img-hover-container {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+/* ---------------contact----------- */
+.contact{
+    max-width: 100%;
+    margin: auto;
+}
+input{
+    /* height: 35px;
+    width: 500px; */
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+form textarea{
+    height: 120px;
+    width:500px ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+}
+
+/* font awesome icons */
+
+button  .fa-envelope {
+
+    margin-left: 10px;
+}
+
+button:hover .fa-envelope {
+    color:rgb(225, 145, 25);
+}
+
+
+
+
+.anchor-link{
+    display: inline-block;
+    margin: 50px;
+    transition: color 0.3s;
+}
+.anchor-link:hover .fa-brands{
+    color:#2c4bd5;
+}
+.anchor-link:hover .fa-phone{
+    color:#2c4bd5;
+}
+/* footer links */
+
+.copy{
+    color: white;
+}
+
+.footer-links {
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(0, 0, 0);
+}
+
+/* h1{ font-size:16px; }
+
+@media(min-width: 768px){ 
+    h1{ font }
+}
+@media(min-width: 768px){ } */
